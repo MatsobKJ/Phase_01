@@ -1,0 +1,72 @@
+\documentclass{article}
+\begin{document}
+ \section{User-System Modelling}
+ \begin{center}
+  UC1 - Open Application
+  \begin{tabular}{ |p{5.5cm}|p{5.5cm}| }
+    \hline
+    \multicolumn{1}{|c|}{Actor} & \multicolumn{1}{c|}{System} \\ \hline
+     & 0. Map of the university is drawn. Location of user is gotten using GPS and/or WiFi and displayed on the map. \\ \hline
+  \end{tabular}
+\hfill \break \hfill \break \hfill \break
+  UC2 - Location Search
+  \begin{tabular}{ |p{5.5cm}|p{5.5cm}| }
+    \hline
+    \multicolumn{1}{|c|}{Actor} & \multicolumn{1}{c|}{System} \\ \hline
+     &0. Drop down list of recently visited locations and suggested locations, as well as a search bar.\\ \hline
+     1. User either selects a choice from the drop down list or searches for another location. &2. Searches for location in database. If location is not found, report back to user and end user case, else, display location on university map and provide user with further options.\\ \hline
+  \end{tabular}
+\hfill \break \hfill \break \hfill \break
+  UC3 - User Input
+  \begin{tabular}{ |p{5.5cm}|p{5.5cm}| }
+    \hline
+    \multicolumn{1}{|c|}{Actor} & \multicolumn{1}{c|}{System} \\ \hline
+     &0. Displays a form to allow the user to submit a new class to their timetable.\\ \hline
+     1. Enters information about the class, such as module code, location, and time and then submits the information. &2. Adds class to user database and then refreshes the form for a new class.\\ \hline
+     3. Repeats process until all classes have been entered. &4. Can now provide a shortcut option when the user in searching for the location of their classes.\\ \hline
+  \end{tabular}
+\hfill \break \hfill \break \hfill \break
+  UC4 - User Timetable
+  \begin{tabular}{ |p{5.5cm}|p{5.5cm}| }
+    \hline
+    \multicolumn{1}{|c|}{Actor} & \multicolumn{1}{c|}{System} \\ \hline
+     &0. Displays a form to allow the user to submit a new class to their timetable.\\ \hline
+     1. Enters information about the class, such as module code, location, and time and then submits the information. &2. Adds class to user database and then refreshes the form for a new class.\\ \hline
+     3. Repeats process until all classes have been entered. &4. Can now provide a shortcut option when the user in searching for the location of their classes.\\ \hline
+  \end{tabular}
+
+  UC5 - Optimal Route and Traveling
+  \begin{tabular}{ |p{5.5cm}|p{5.5cm}| }
+    \hline
+    \multicolumn{1}{|c|}{Actor} & \multicolumn{1}{c|}{System} \\ \hline
+     &0. System displays multiple routes on the university map along with additional information about the route.\\ \hline
+     1. User selects a given route to the destination. &2. Displays chosen route, instructions and estimated time to reach selected destination.\\ \hline
+     3. Begins along route.&4. Refresh user location and reflect the location on the university map. Update estimated time based on user speed.\\ \hline
+     5. Follows an instruction given by the application.&6. Refresh user information and display next instruction.\\ \hline
+  \end{tabular}
+\hfill \break \hfill \break \hfill \break
+  UC6 - Activities
+  \begin{tabular}{ |p{5.5cm}|p{5.5cm}| }
+    \hline
+    \multicolumn{1}{|c|}{Actor} & \multicolumn{1}{c|}{System} \\ \hline
+     &0. Estimated number of steps is added to the user profile. If user is eligible, system presents a reward to the user.\\ \hline
+    1. If reward is presented, the user can collect/store the reward.&2. Record the state of the user’s reward (stored/ used).\\ \hline
+  \end{tabular}
+\hfill \break \hfill \break \hfill \break
+  UC7 - User Based Augmented Reality
+  \begin{tabular}{ |p{5.5cm}|p{5.5cm}| }
+    \hline
+    \multicolumn{1}{|c|}{Actor} & \multicolumn{1}{c|}{System} \\ \hline
+     &0. Tracks user location as the are on route to their destination. If user gets near a possible point of interest, notify them and provide information about the landmark.\\ \hline
+     1. Acknowledges the notification. If events are available at the landmark the user can select any to be added to a calendar. &2. If any event was selected added it to the users calendar.\\ \hline
+  \end{tabular}
+\newpage
+  UC8 - End Point
+  \begin{tabular}{ |p{5.5cm}|p{5.5cm}| }
+    \hline
+    \multicolumn{1}{|c|}{Actor} & \multicolumn{1}{c|}{System} \\ \hline
+     &0. Realises user has reached the destination when users location is close enough to the location of the entered destination. Displays information about the trip, such as duration, distance travelled, average speed, etc.\\ \hline
+     1. User acknowledges that they have arrived at the destination.&2. UI resets and awaits a new destination from the user.\\ \hline
+  \end{tabular}
+\end{center}
+\end{document}
