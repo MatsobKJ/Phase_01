@@ -1,0 +1,3 @@
+\subsection{Performance}
+
+The NavUp App has to be downloaded from Playstore or iTunes to run on smartphone devices.The devices have to be connected to Tuks Wi-fi for the user to access and use the application.The Wi-Fi internet connection strength will determine the efficiency of the app.
